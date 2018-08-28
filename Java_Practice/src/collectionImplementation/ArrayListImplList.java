@@ -6,16 +6,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class ArrayListImpl<T> implements List{
+public class ArrayListImplList<T> implements List{
 	private Object[] data;
 	private int size = 0;
 	private int DEFAULT_SIZE  = 10;
 	
-	public ArrayListImpl() {
+	public ArrayListImplList() {
 		data = new Object[this.DEFAULT_SIZE];
 	}
 	
-	public ArrayListImpl(int size) {
+	public ArrayListImplList(int size) {
 		data = new Object[size];
 		this.size = size;
 	}
@@ -165,7 +165,7 @@ public class ArrayListImpl<T> implements List{
 	
 	public static void main(String[] args){
 		ArrayList<Integer> array = new ArrayList<Integer>();	
-		List<Integer> myArray = new ArrayListImpl<Integer>();
+		List<Integer> myArray = new ArrayListImplList<Integer>();
 		myArray.add(2);
 		myArray.add(3);
 		myArray.add(0);
